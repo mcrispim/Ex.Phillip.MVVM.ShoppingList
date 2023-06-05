@@ -2,4 +2,7 @@
     <string name="app_name">MVVM Shopping List</string>
     <string name="shopping_list">Shopping List</string>
     <string name="adds_another_item">Adds another item</string>
+    <string name="delete_item_button">Delete item button</string>
+    <string name="add_1_item_button">Add 1 item button</string>
+    <string name="delete_1_item_button">Delete 1 item button</string>
 </resources>

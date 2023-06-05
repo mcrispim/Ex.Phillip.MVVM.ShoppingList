@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintHorizontal_weight="5"
+        android:text="Item name"
+        android:padding="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/item_quant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintHorizontal_weight="1"
+        android:padding="8dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/icDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item_name"
+        app:srcCompat="@drawable/ic_delete"
+        android:contentDescription="@string/delete_item_button" />
+
+    <ImageView
+        android:id="@+id/icPlus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@+id/icMinus"
+        app:layout_constraintStart_toStartOf="@+id/item_quant"
+        app:layout_constraintTop_toBottomOf="@+id/item_quant"
+        app:srcCompat="@drawable/ic_plus"
+        android:contentDescription="@string/add_1_item_button" />
+
+    <ImageView
+        android:id="@+id/icMinus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/item_quant"
+        app:layout_constraintTop_toBottomOf="@+id/item_quant"
+        app:srcCompat="@drawable/ic_minus"
+        android:contentDescription="@string/delete_1_item_button" />
+</androidx.constraintlayout.widget.ConstraintLayout>
