@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">MVVM Shopping List</string>
+    <string name="shopping_list">Shopping List</string>
+    <string name="adds_another_item">Adds another item</string>
 </resources>
