@@ -5,4 +5,9 @@
     <string name="delete_item_button">Delete item button</string>
     <string name="add_1_item_button">Add 1 item button</string>
     <string name="delete_1_item_button">Delete 1 item button</string>
+    <string name="cancel">CANCEL</string>
+    <string name="amount">Amount</string>
+    <string name="add">ADD</string>
+    <string name="name">Name</string>
+    <string name="add_an_item">Add an item</string>
 </resources>
