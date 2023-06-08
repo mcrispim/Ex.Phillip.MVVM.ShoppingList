@@ -8,7 +8,7 @@ import com.example.mvvmshoppinglist.data.entities.ShoppingItem
 import com.example.mvvmshoppinglist.databinding.ShoppingItemBinding
 
 class ShoppingListAdapter(
-    private var items: List<ShoppingItem>,
+    var items: List<ShoppingItem>,
     private val viewModel: ShoppingListViewModel
 ) : RecyclerView.Adapter<ShoppingListAdapter.ItemViewHolder>() {
 
