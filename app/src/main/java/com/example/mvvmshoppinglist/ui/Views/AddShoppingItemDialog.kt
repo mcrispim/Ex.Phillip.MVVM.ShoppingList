@@ -13,8 +13,8 @@ class AddShoppingItemDialog(context: Context, var addDialogListener: AddDialogLi
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         binding = DialogAddItemBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         binding.tvAddItem.setOnClickListener {
             val name = binding.etName.text.toString()
