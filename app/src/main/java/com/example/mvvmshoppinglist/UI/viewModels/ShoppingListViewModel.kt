@@ -1,8 +1,6 @@
-package com.example.mvvmshoppinglist.UI.ViewModels
+package com.example.mvvmshoppinglist.UI.viewModels
 
-import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
-import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.viewModelScope
 import com.example.mvvmshoppinglist.data.entities.ShoppingItem
 import com.example.mvvmshoppinglist.data.repositories.ShoppingItemRepository
