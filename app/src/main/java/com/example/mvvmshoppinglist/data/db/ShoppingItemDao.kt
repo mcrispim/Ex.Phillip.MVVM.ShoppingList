@@ -3,15 +3,14 @@ package com.example.mvvmshoppinglist.data.db
 import androidx.lifecycle.LiveData
 import androidx.room.Dao
 import androidx.room.Delete
-import androidx.room.Insert
-import androidx.room.OnConflictStrategy
 import androidx.room.Query
+import androidx.room.Upsert
 import com.example.mvvmshoppinglist.data.entities.ShoppingItem
 
 @Dao
 interface ShoppingItemDao {
 
-    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    @Upsert
     suspend fun upsertShoppingItem(item: ShoppingItem)
 
     @Delete
