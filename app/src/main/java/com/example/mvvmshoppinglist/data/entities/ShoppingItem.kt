@@ -9,5 +9,5 @@ data class ShoppingItem(
     var amount: Int
 ) {
     @PrimaryKey(autoGenerate = true)
-    val id: Int? = null
+    var id: Int? = null
 }

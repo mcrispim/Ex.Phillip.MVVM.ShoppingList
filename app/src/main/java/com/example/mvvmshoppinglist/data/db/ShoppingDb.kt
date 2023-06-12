@@ -6,10 +6,7 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 import com.example.mvvmshoppinglist.data.entities.ShoppingItem
 
-@Database(
-    entities = [ShoppingItem::class],
-    version = 1
-)
+@Database(entities = [ShoppingItem::class], version = 1)
 abstract class ShoppingDb : RoomDatabase() {
 
     abstract fun getShoppingItemDao(): ShoppingItemDao
@@ -23,10 +20,13 @@ abstract class ShoppingDb : RoomDatabase() {
             instance ?: createDatabase(context).also { instance = it }
         }
 
-        private fun createDatabase(context: Context) =
-            Room.databaseBuilder(
+        private fun createDatabase(context: Context): ShoppingDb {
+            val db = Room.databaseBuilder(
                 context.applicationContext,
-                ShoppingDb::class.java, "ShoppingDB.db"
+                ShoppingDb::class.java,
+                "ShoppingDB.db"
             ).build()
+            return db
+        }
     }
 }
